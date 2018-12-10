@@ -1,0 +1,21 @@
+
+public class Livro {
+	
+	String nome;
+	String descricao;
+	double Valor;
+	String 	isbn;
+	
+	void mostrarDetralhes() {
+		
+		String mensagem = "/n ***********Mostrando Detralhes do Livro*********** /n";
+		System.out.println(mensagem);
+		System.out.println(nome);
+		System.out.println(descricao);
+		System.out.println(Valor);
+		System.out.println(isbn);
+		
+	}
+	
+
+}

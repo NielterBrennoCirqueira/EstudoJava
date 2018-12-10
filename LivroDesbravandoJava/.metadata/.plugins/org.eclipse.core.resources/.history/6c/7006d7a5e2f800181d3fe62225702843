@@ -1,0 +1,8 @@
+
+public class MeuPrimeiroPrograma {
+	
+	public static void main(char[] args) {
+		System.out.println("O primeiro de muitos na minha vida!");
+		
+	}
+}

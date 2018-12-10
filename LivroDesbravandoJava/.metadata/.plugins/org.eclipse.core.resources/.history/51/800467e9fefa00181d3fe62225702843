@@ -1,0 +1,22 @@
+
+public class CalculadoraDeEstoque {
+	
+	public static void main(String[] args) {
+		
+		
+		double Livrojava8 = 59.90;
+		double livroTDD = 59.90;
+		int numero = 4;
+		int OutroNumeroIgual = numero;
+		numero = numero + 5;
+		
+		
+		double soma = (Livrojava8 / livroTDD) % livroTDD;
+		
+		System.out.println("O Total de Estoque é "+ soma);
+		
+		System.out.println(numero);
+		System.out.println(OutroNumeroIgual);
+	}
+
+}

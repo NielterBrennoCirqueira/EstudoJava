@@ -1,0 +1,32 @@
+
+public class Livro {
+	
+	String nome;
+	String descricao;
+	double Valor;
+	String isbn;
+	String nomeDoAutor;
+	String emailDoAutor;
+	String cpfDoAutor;
+	
+	
+	void mostrarDetralhes() {
+		
+		System.out.println("***********Mostrando Detralhes do Livro*********** ");
+		System.out.println("Nome: "+nome);
+		System.out.println("Descrição: "+descricao);
+		System.out.println("Valor: "+Valor);
+		System.out.println("ISBN: "+isbn);
+		System.out.println("--");
+		
+		System.out.println("***********Mostrando Detralhes do Autor*********** ");
+		System.out.println("Nome: "+Autor.nome);
+		System.out.println("Descrição: "+descricao);
+		System.out.println("Valor: "+Valor);
+		System.out.println("ISBN: "+isbn);
+		System.out.println("--");
+		
+	}
+	
+
+}
