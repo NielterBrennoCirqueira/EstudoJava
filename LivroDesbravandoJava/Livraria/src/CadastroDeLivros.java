@@ -3,7 +3,7 @@ public class CadastroDeLivros {
 	
 	public static void main(String[] args) {
 		
-		
+
 		Autor autor = new Autor();
 		autor.nome = "Rodrigo Turini";
 		autor.email = "rodrigo.turini@caelum.com.br";
@@ -17,12 +17,12 @@ public class CadastroDeLivros {
 	
 		livro.autor = autor;
 		
-		livro.mostrarDetralhes();
+		livro.mostrarDetralhes(); 
 		
 		Autor outroAutor = new Autor();
-		autor.nome = "Rodrigo Turini";
-		autor.email = "rodrigo.turini@caelum.com.br";
-		autor.cpf = "123.456.789-10";
+		outroAutor.nome = "Paulo Silveira";
+		outroAutor.email = "paulo.silveira@caelum.com.br";
+		outroAutor.cpf = "123.456.789-10";
 		
 		Livro outroLivro = new Livro();
 		outroLivro.nome = "Lógica de Programação";
