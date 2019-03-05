@@ -1,0 +1,19 @@
+package br.com.nielter.teste;
+
+import br.com.nielter.entidades.Usuario;
+import br.com.nielter.jdbc.UsuarioDAO;
+
+public class TesteUsuarioDAO {
+	
+	public static void main(String[] args){
+		
+		Usuario usu = new Usuario();
+		usu.setNome("Nielter");
+		usu.setUsuario("niel");
+		usu.setSenha("niel123");
+		
+		UsuarioDAO usuDao = new UsuarioDAO();
+		usuDao.cadastrar(usu);
+	}
+
+}

@@ -1,0 +1,5 @@
+package br.com.nielter.jdbc;
+
+public class UsuarioDAO {
+
+}

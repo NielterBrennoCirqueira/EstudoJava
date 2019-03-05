@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Extract method &apos;private static void TestCadastrar()&apos; from &apos;br.com.nielter.teste.TesteUsuarioDAO.main()&apos; to &apos;br.com.nielter.teste.TesteUsuarioDAO&apos;&#x0D;&#x0A;- Original project: &apos;CJWeb1&apos;&#x0D;&#x0A;- Method name: &apos;TestCadastrar&apos;&#x0D;&#x0A;- Destination type: &apos;br.com.nielter.teste.TesteUsuarioDAO&apos;&#x0D;&#x0A;- Declared visibility: &apos;private&apos;" comments="false" description="Extract method &apos;TestCadastrar&apos;" destination="0" exceptions="false" flags="786434" id="org.eclipse.jdt.ui.extract.method" input="/src&lt;br.com.nielter.teste{TesteUsuarioDAO.java" name="TestCadastrar" replace="false" selection="198 183" stamp="1551725668201" version="1.0" visibility="2"/>
+</session>

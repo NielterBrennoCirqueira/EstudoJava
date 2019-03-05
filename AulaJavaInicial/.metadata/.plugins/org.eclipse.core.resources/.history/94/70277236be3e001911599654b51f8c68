@@ -1,0 +1,65 @@
+package br.com.nielter.teste;
+
+import java.util.List;
+
+import br.com.nielter.entidades.Usuario;
+import br.com.nielter.jdbc.UsuarioDAO;
+
+public class TesteUsuarioDAO {
+	
+	public static void main(String[] args){
+		
+		//TestCadastrar();
+		//TestAlterar();
+		//TestExcluir();
+		//BuscarTodos();
+		BuscarPorId();
+	}
+
+	private static void TestCadastrar() {
+		Usuario usu = new Usuario();
+		usu.setNome("Nielter");
+		usu.setUsuario("niel");
+		usu.setSenha("niel123");
+		
+		UsuarioDAO usuDao = new UsuarioDAO();
+		usuDao.cadastrar(usu);
+	}
+	
+	private static void TestAlterar() {
+		Usuario usu = new Usuario();
+		usu.setNome("dadsadasNielter");
+		usu.setUsuario("niel");
+		usu.setSenha("niel123");
+		usu.setId(7);
+		
+		UsuarioDAO usuDao = new UsuarioDAO();
+		usuDao.Alterar(usu);
+	}
+	
+	private static void TestExcluir() {
+		Usuario usu = new Usuario();
+		usu.setId(7);
+		
+		UsuarioDAO usuDao = new UsuarioDAO();
+		usuDao.Excluir(usu);
+	}
+
+	private static void BuscarTodos() {
+		UsuarioDAO usuDao = new UsuarioDAO();
+		List<Usuario> listaResultado = usuDao.BuscarTodos();
+		
+		for(Usuario u: listaResultado){
+			System.out.println(u.getId() + " " + u.getNome() + " " + u.getUsuario() + " " + u.getSenha());
+		}
+	}
+	
+	private static void BuscarPorId() {
+		UsuarioDAO usuDao = new UsuarioDAO();
+		Usuario usu = usuDao.BuscarPorId(1);
+		System.out.println(usu.getId() + " " + usu.getNome() + " " + usu.getUsuario() + " " + usu.getSenha());
+		}
+	}
+
+
+}

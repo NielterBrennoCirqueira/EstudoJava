@@ -1,0 +1,5 @@
+package br.com.nielter.teste;
+
+public class TesteUsuarioDAO {
+
+}
