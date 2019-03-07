@@ -9,6 +9,12 @@ public class conexao {
 	public static Connection getConnerction(){
 		Connection con = null;
 			try {
+				try {
+					Class.forName("org.postgresql.Driver");//Força o Carregamento do Driver
+				} catch (ClassNotFoundException e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 				con = DriverManager.getConnection("jdbc:postgresql://localhost:5432/CJWeb1","postgres","123456");
 			    System.out.println("Conectado com Sucesso");
 			} catch (SQLException e) {

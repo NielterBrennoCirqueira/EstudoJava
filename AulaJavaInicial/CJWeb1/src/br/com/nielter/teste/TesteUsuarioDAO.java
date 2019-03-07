@@ -14,7 +14,7 @@ public class TesteUsuarioDAO {
 		//TestExcluir();
 		//BuscarTodos();
 		//testBuscarPorId();
-		testAutenticar();
+		//testAutenticar();
 	}
 
 	private static void TestCadastrar() {
