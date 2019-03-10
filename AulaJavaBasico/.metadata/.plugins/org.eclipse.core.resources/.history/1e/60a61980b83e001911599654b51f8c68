@@ -1,0 +1,46 @@
+package br.com.nielter.teste;
+
+import br.com.nielter.entidades.Usuario;
+import br.com.nielter.jdbc.UsuarioDAO;
+
+public class TesteUsuarioDAO {
+	
+	public static void main(String[] args){
+		
+		//TestCadastrar();
+		//TestAlterar();
+		TestExcluir();
+	}
+
+	private static void TestCadastrar() {
+		Usuario usu = new Usuario();
+		usu.setNome("Nielter");
+		usu.setUsuario("niel");
+		usu.setSenha("niel123");
+		
+		UsuarioDAO usuDao = new UsuarioDAO();
+		usuDao.cadastrar(usu);
+	}
+	
+	private static void TestAlterar() {
+		Usuario usu = new Usuario();
+		usu.setNome("dadsadasNielter");
+		usu.setUsuario("niel");
+		usu.setSenha("niel123");
+		usu.setId(7);
+		
+		UsuarioDAO usuDao = new UsuarioDAO();
+		usuDao.Alterar(usu);
+	}
+	
+	private static void TestExcluir() {
+		Usuario usu = new Usuario();
+		usu.setId(7);
+		
+		UsuarioDAO usuDao = new UsuarioDAO();
+		usuDao.Excluir(usu);
+	}
+
+
+
+}
