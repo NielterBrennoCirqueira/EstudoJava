@@ -21,23 +21,47 @@ public class ClienteController {
 	
 	private List<Cliente> clientes;
 	
-	private Cliente cliente = new Cliente();
+	private Cliente cliente;
+
+	private boolean modoEdicao = false;
 	
 	@PostConstruct
 	public void init() {
 		setClientes(clienteRepository.findAll());
+		cliente = new Cliente();
 	}
 	
-	public void Salvar() {
-		
+	public void salvar() {
 		clienteRepository.save(cliente);
-		clientes.add(cliente);
+		if(!modoEdicao) {
+			clientes.add(cliente);
+		}
+		cliente = new Cliente();
+		modoEdicao=false;
 	}
 	
-	public void Excluir(Cliente cliente) {
+	public boolean isModoEdicao() {
+		return modoEdicao;
+	}
+
+	public void setModoEdicao(boolean modoEdicao) {
+		this.modoEdicao = modoEdicao;
+	}
+
+	public void excluir(Cliente cliente) {
 		clienteRepository.delete(cliente);
 		clientes.remove(cliente);
-		
+		modoEdicao=false;
+	}
+	
+	public void cancelar() {
+		cliente = new Cliente();
+		modoEdicao=false;
+	}
+	
+	public void editar(Cliente cliente) {
+		setCliente(cliente);
+		modoEdicao=true;
 	}
 		
 	public Cliente getCliente() {
