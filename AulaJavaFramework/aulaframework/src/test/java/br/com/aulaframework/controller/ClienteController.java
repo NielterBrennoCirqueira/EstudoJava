@@ -28,10 +28,16 @@ public class ClienteController {
 		setClientes(clienteRepository.findAll());
 	}
 	
-	public void salvar() {
+	public void Salvar() {
 		
 		clienteRepository.save(cliente);
 		clientes.add(cliente);
+	}
+	
+	public void Excluir(Cliente cliente) {
+		clienteRepository.delete(cliente);
+		clientes.remove(cliente);
+		
 	}
 		
 	public Cliente getCliente() {
